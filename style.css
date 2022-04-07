@@ -739,6 +739,10 @@ p{
         width: 270px;
     }
 
+    .user-text p{
+        margin-top : 0px;
+    }
+    
     .slide-row{
         width: 1600px;
     }
