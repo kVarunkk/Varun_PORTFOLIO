@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+    </style> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        @media(min-width:768px){
+            .footer{
+                margin-top: 700px;
+            }
+        }
+         
+
+        @media(max-width:480px){
+            .footer{
+                margin-top: 850px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+     <!-- PRELOADER -->
+
+     <div class="wrapper">
+        <div class="lds-ellipsis">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="navbar" id="myTopnav">
+
+
+        <div class="menu-btn" id="button1">
+            <div class="menu-btn__burger"></div>
+        </div>
+
+        <nav>
+
+            
+
+            <div class="link" id="linkl" style="display:none">
+                <ul>
+                    <li>
+                        <a id="new" href="index.html">ABOUT ME</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" href="projects.html">PROJECTS</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" href="contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="link1" id="linkl1">
+                <ul>
+                    <li>
+                        <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME" ><span>ABOUT ME</span></a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" class="navLink" href="projects.html" data-replace="PROJECTS" ><span>PROJECTS</span></a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME" ><span>CONTACT ME</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="container">
+        
+        <div class="testimonial">
+           <div class="slide-row" id="slide">
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>
+                        This was my FIRST ever Project in the World of Web-Dev :)
+                        <span>Languages used</span> : HTML5, CSS3.<br>  <br>
+                        <a href="https://kvarunkk.github.io/Biodata/" target="_blank" class="proLink">Live</a> <br>
+                        <a href="https://github.com/kVarunkk/Biodata" target="_blank" class="proLink">Github</a>
+                    </p>
+                </div>
+                <div class="user-img">
+                    <img src="mock-1.png">
+                </div>
+            </div>
+    
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>
+                       Learnt a lot while making this Website!<br>
+                       <span>Languages used</span> : HTML5, CSS3, JavaScript.<br>  <br>  
+                       <a href="https://kvarunkk.github.io/fLUCK/" target="_blank" class="proLink">Live</a> <br>
+                       <a href="https://github.com/kVarunkk/fLUCK" target="_blank" class="proLink">Github</a>
+                    </p>
+                </div>
+                <div class="user-img">
+                    <img src="mock-2.png">
+                </div>
+            </div>
+    
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>
+                       Built a Template for Portfolios.<br>
+                       <span>Languages used</span> : HTML5, CSS3, JavaScript.<br>  <br>
+                       <a href="https://kvarunkk.github.io/Portfolio-Sample/" target="_blank" class="proLink">Live</a> <br>
+                       <a href="https://github.com/kVarunkk/Portfolio-Sample" target="_blank" class="proLink">Github</a>
+                    </p>
+                </div>
+                <div class="user-img">
+                    <img src="mock-3.png">
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="footer" id="foot">
+        <a href="#" class="fa fa-google old"></a>
+        <a href="#" class="fa fa-linkedin old" target="_blank"></a>
+        <a href="#" class="fa fa-github old" target="_blank"></a>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // FOR PRELOADER
+
+$(document).ready(function () {
+    $(".wrapper").delay(2000).fadeOut("slow");
+});
+
+(window).load(function () {
+    $('.wrapper').hide();
+    $('html, body').css('visibility', 'visible');
+});
+    </script>
+
+
+    <script>
+        $(".menu-btn").click(function () {
+            $(".link").slideToggle();
+        });
+
+
+        $(".link").click(function () {
+            $(".link").slideToggle();
+            $(".menu-btn").removeClass("open");
+            menuOpen = false;
+        });
+
+
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+    </script>
+
+
+    <!-- <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for (let index = 0; index < 3; index++) {
+                btn[index].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";
+            for (let index = 0; index < 3; index++) {
+                btn[index].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1600px)";
+            for (let index = 0; index < 3; index++) {
+                btn[index].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script> -->
+
+   
+    
+</body>
+</html>
