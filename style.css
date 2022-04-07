@@ -705,6 +705,33 @@ p{
 
 
 
+.thankHead{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Merriweather', serif;
+    margin-top: 50px;
+}
+
+
+.quote{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 60px;
+    color: rgb(241, 128, 128);
+    text-align: center;
+    line-height: 70px;
+}
+
+.thankChild{
+    text-align: center;
+    margin: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.thankA{
+    font-size: x-large;
+    color: #1f8df5;
+}
 
 
 
