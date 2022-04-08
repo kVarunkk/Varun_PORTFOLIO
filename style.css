@@ -492,24 +492,7 @@ a {
 
 
 
-.div4 {
-    margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 250px;
-    margin-bottom: 80px;
-    width: 35%;
-    background-color: rgba(242, 213, 213, 0.663);
-    text-align: center;
-    border-radius: 20px;
-    animation: 0.5s ease-out 0s 1 slideInFromBottom;
-}
 
-.side{
-    margin-top: 63px;
-    margin-right: 130px;
-    color: #4f4f4f;
-    animation: 0.4s ease-out 0s 1 slideInFromRight;
-}
 
 .imp1{
     font-family: 'Merriweather', serif;
@@ -527,6 +510,29 @@ a {
 
 
 /* FORM STARTS */
+
+
+.div4 {
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 250px;
+    margin-bottom: 80px;
+    width: 35%;
+    background-color: rgba(242, 213, 213, 0.663);
+    text-align: center;
+    border-radius: 20px;
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
+}
+
+.side{
+    margin-top: 57px;
+    margin-right: 130px;
+    color: #4f4f4f;
+    animation: 0.4s ease-out 0s 1 slideInFromRight;
+}
+
+
+
 
 .form {
     width: 100%;
