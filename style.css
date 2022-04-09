@@ -397,11 +397,6 @@ a {
     margin-bottom: 150px;
 }
 
-/* .grid1 div{
-    width: 50%;
-    text-align: center;
-} */
-
 .introduction{
     width: 50%;
 }
@@ -713,6 +708,11 @@ textarea {
 .footer2{
     background-color: #545454;
     margin: 0;
+}
+
+.footer2 img{
+    width: 50px;
+    margin: 20px;
 }
 
 p{
