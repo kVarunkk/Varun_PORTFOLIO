@@ -435,6 +435,7 @@ a {
     margin-top: 0px;
     border-radius: 15px;
     animation: 1.2s ease-out 0s 1 slideInFromBottom;
+    box-shadow: -3px 6px 5px 0px rgb(154, 158, 157, 1);
 }
 
 
@@ -703,6 +704,17 @@ textarea {
     color: white;
 }
 
+.counterimg{
+    margin-left:715px;
+    margin-bottom: 20px;
+    box-shadow: -3px 6px 5px 0px rgb(102, 103, 103);
+}
+
+.footer2{
+    background-color: #a19f9f;
+    margin: 0;
+}
+
 p{
     font-size: large;
     font-weight: 600;
@@ -751,6 +763,10 @@ p{
 
 
 @media(max-width : 480px){
+    
+    .counterimg{
+        margin-left: 160px;
+    }
 
     .container1{
         margin-bottom: 160px;
