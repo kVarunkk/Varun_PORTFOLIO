@@ -1,7 +1,21 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x : hidden;
 }
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+}
+
+.newSVG{
+    display: none;
+}
+
 
 
 
@@ -147,7 +161,7 @@ nav {
     background-image: linear-gradient(white,rgb(206, 203, 203));
     margin: 0;
     height: 45px;
-
+    box-shadow: 0 13px 15px -2px rgba(0,0,0,.2);
 }
 
 ul {
@@ -403,7 +417,7 @@ a {
 
 .change{
     font-weight: lighter;
-    color: #d3cfce;
+    color: #898989;
 }
 
 
@@ -756,6 +770,39 @@ p{
 
 
 
+@media(min-width:768px){
+   
+    .slide-row{
+    width: 1000px;
+    }
+    
+    .user-img{
+    top: 10px;
+    right: 30px;
+    height: 100%;
+}
+    
+    .user-text{
+    background:rgb(239, 226, 236);
+    width: 600px;
+    height: 320px;
+    left: 70px;
+    top: 55%;
+    box-shadow: 0 13px 15px -2px rgba(0,0,0,.2);
+}
+    
+    .container{
+    width: 1000px;
+    height: 500px;
+    box-shadow: inset 0 0px 10px -4px rgba(0,0,0,.2);
+}
+
+
+
+}
+
+
+
 
 
 
@@ -763,6 +810,18 @@ p{
 
 
 @media(max-width : 480px){
+    
+    .new1SVG{
+       display: none;
+    }
+
+    .newSVG {
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: -1;
+    }
     
     .counterimg{
         margin-left: 160px;
