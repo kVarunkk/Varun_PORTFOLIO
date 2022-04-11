@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@1,300&family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    </style> 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <!-- PRELOADER -->
+
+    <div class="wrapper">
+        <div class="lds-ellipsis">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+        
+
+    
+        <div class="navbar" id="myTopnav">
+
+
+            <div class="menu-btn" id="button1">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav>
+
+                
+
+                <div class="link" id="linkl" style="display:none">
+                    <ul>
+                        <li>
+                            <a id="new" href="index.html">ABOUT ME</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" href="projects.html">PROJECTS</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" href="contact.html">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="link1" id="linkl1">
+                    <ul>
+                        <li>
+                            <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME" ><span>ABOUT ME</span></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" class="navLink" href="projects.html" data-replace="PROJECTS" ><span>PROJECTS</span></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME" ><span>CONTACT ME</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+
+
+        <svg viewBox="0 0 500 300"
+        preserveAspectRatio="xMinYMin meet">
+             
+            <path d="M0, 100 C150, 200 350,
+                0 500, 100 L500, 00 L0, 0 Z"
+                style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
+            </path>
+        </svg>
+
+        <svg class="newSVG" viewBox="0 0 150 200"
+        preserveAspectRatio="xMinYMin meet">
+             
+            <path d="M0, 100 C150, 200 350,
+                0 500, 100 L500, 00 L0, 0 Z"
+                style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
+            </path>
+        </svg>
+
+        <svg class="new1SVG" viewBox="0 0 380 180"
+        preserveAspectRatio="xMinYMin meet">
+             
+            <path d="M0, 100 C150, 200 350,
+                0 500, 100 L500, 00 L0, 0 Z"
+                style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.2;">
+            </path>
+        </svg>
+
+        
+    
+
+
+        <div class="grid1">
+            <div class="introduction">
+                <div class="name">
+                    <span class="change">I'm</span> Varun.
+                </div>
+
+                <div class="container1">
+                    <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+                
+                <a href="#foot" class="fa fa-angle-double-down new"></a>
+                
+
+            </div>
+
+            <div class="image">
+                <img class="profileIMG" src="profile_2.jpg">
+            </div>
+        </div>
+
+        
+
+
+
+        <div class="footer" id="foot">
+            <a href="mailto:varunkumawatleap2@gmail.com" class="fa fa-google old"></a>
+            <a href="https://www.linkedin.com/in/varun-kumawat-0a6b3a228" class="fa fa-linkedin old" target="_blank"></a>
+            <a href="https://github.com/kVarunkk" class="fa fa-github old" target="_blank"></a>
+        </div>
+
+        <div class="footer2">
+            <!-- <a href="https://www.hitwebcounter.com" target="_blank"> -->
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7972791&style=0007&nbdigits=5&type=ip&initCount=5"  Alt="web counter"   border="0" /></a>                                    
+        </div>
+
+
+        
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+
+
+    <script>
+        $(".menu-btn").click(function () {
+            $(".link").slideToggle();
+        });
+
+
+        $(".link").click(function () {
+            $(".link").slideToggle();
+            $(".menu-btn").removeClass("open");
+            menuOpen = false;
+        });
+
+
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
