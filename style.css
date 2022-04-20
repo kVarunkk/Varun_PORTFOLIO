@@ -180,12 +180,12 @@ nav {
     background-image: linear-gradient(white, rgb(206, 203, 203));
     margin: 0;
     height: 45px;
-    box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2);
+    /* box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2); */
 
 }
 
 ul {
-    margin: 0;
+    margin-top: 0px;
     list-style: none;
     padding: 0;
     /* To remove whitespace */
@@ -261,20 +261,20 @@ a {
 
 
 .link {
-    display: inline-block;
+    position: absolute;
     text-align: center;
-    margin-left: 450px;
-    margin-top: 5px;
+    height: 100%;
+    margin-right: 0;
 }
 
 
-.button {
+/* .button {
     float: right;
     margin-top: 9px;
     height: 30px;
     width: 30px;
     margin-right: 10px;
-}
+} */
 
 #times {
     display: none;
@@ -285,22 +285,42 @@ a {
 
 
 
+
 .navbar {
     transition: 750ms ease;
     width: 100%;
     margin-top: 0px;
+    box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2);
 }
 
 
 
 @media(min-width:768px) {
 
+    .fa-download{
+        margin: 0px 5px 0 5px;
+    }
+    
+    .res{
+        margin: 0px  0  0px 370px;
+        box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
+        color: rgb(238, 109, 109);
+        background-color: rgb(88, 88, 235);
+        border-radius: 5px;
+        border: none;
+        padding: 5px;      
+    }
+
     li {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .button {
+    /* .button {
+        visibility: hidden;
+    } */
+
+    .link{
         visibility: hidden;
     }
 
@@ -317,11 +337,35 @@ a {
     .navbar {
         padding-top: 10px;
     }
+    
 
 
 }
 
 @media(max-width:480px) {
+
+    .res{
+        margin-top: 90px;
+        display: flex;
+        box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
+        color: rgb(238, 109, 109);
+        background-color: rgb(88, 88, 235);
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+
+    .fa-download{
+        margin: 3px 5px 0 5px;
+    }
+
+    
+
+    ul{
+        margin: 100px 50px;
+       
+    }
+
     li {
         display: block;
         padding-top: 5px;
@@ -335,13 +379,13 @@ a {
 
     .link {
         margin-right: 0px;
-        margin-left: 250px;
-        margin-top: 20px;
-        background-color: rgb(207, 206, 206);
-        position: relative;
+        margin-left: 260px;
+        margin-top: 0px;
+        background-color: rgb(235, 232, 232);
+        line-height: 70px;
         z-index: 4;
         box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
-        border-radius: 10px;
+        transform: scale(0);
         padding: 5px;
     }
 
@@ -355,7 +399,7 @@ a {
     }
 
     #new {
-        color: rgb(22, 22, 22);
+        color: rgb(78, 78, 78);
     }
 
 
@@ -367,8 +411,10 @@ a {
         width: 25px;
         height: 25px;
         float: right;
-        margin: 8px 10px 8px 8px;
+        margin: 8px 10px 8px 365px;
         transition: all .5s ease-in-out;
+        z-index: 5;
+        position: absolute;
     }
 
     .menu-btn__burger {
@@ -426,7 +472,6 @@ a {
 
 
 
-
 /* FOR PAGE-1 */
 
 .grid1 {
@@ -439,6 +484,12 @@ a {
 
 .introduction {
     width: 50%;
+}
+
+.res1{
+    
+    /* margin-bottom: -20px; */
+    margin-left: 320px;
 }
 
 .change {
@@ -470,7 +521,7 @@ a {
     width: 500px;
     margin-top: 0px;
     border-radius: 15px;
-    animation: 1.2s ease-out 0s 1 slideInFromBottom;
+    animation: .75s ease-out 0s 1 slideInFromBottom;
     box-shadow: -3px 6px 5px 0px rgb(154, 158, 157, 1);
 }
 
@@ -848,8 +899,13 @@ textarea {
 
 @media(max-width : 480px) {
 
+    .res1{
+        display: none;
+    }
+
     .new1SVG {
         display: none;
+        /* margin-top: -10px; */
     }
 
     .newSVG {
@@ -858,6 +914,11 @@ textarea {
         top: 50px;
         left: 0;
         z-index: -1;
+    }
+
+
+    svg{
+        margin-top: -10px;
     }
 
     .counterimg {
