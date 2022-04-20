@@ -280,7 +280,6 @@ a {
     display: none;
 }
 
-
 .res{
     transition: all .3s ease-in-out;
 }
@@ -368,7 +367,7 @@ a {
     
 
     ul{
-        margin: 100px 50px;
+        margin: 100px 20%;
        
     }
 
@@ -384,8 +383,8 @@ a {
     }
 
     .link {
-        margin-right: 0px;
-        margin-left: 260px;
+        float: right;
+        width: 50%;
         margin-top: 0px;
         background-color: rgb(235, 232, 232);
         line-height: 70px;
@@ -417,7 +416,7 @@ a {
         width: 25px;
         height: 25px;
         float: right;
-        margin: 8px 10px 8px 365px;
+        margin: 8px 10px 8px 85%;
         transition: all .5s ease-in-out;
         z-index: 5;
         position: absolute;
