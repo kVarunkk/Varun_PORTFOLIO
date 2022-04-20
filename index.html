@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun-About Me</title>
 
+    <!-- FONT AWESOME 5 -->
+    <script src="https://kit.fontawesome.com/b1efcbdff7.js" crossorigin="anonymous"></script>
+
     <!-- FOR FONT-STYLE -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@1,300&family=Nunito&display=swap');
@@ -54,10 +57,10 @@
 
 
 
-            <div class="link" id="linkl" style="display:none">
+            <div class="link" id="linkl" >
                 <ul>
                     <li>
-                        <a id="new" href="index.html">ABOUT ME</a>
+                        <a id="new" href="index.html">ABOUT</a>
                     </li>
                     <hr>
                     <li>
@@ -65,7 +68,10 @@
                     </li>
                     <hr>
                     <li>
-                        <a id="new" href="contact.html">CONTACT ME</a>
+                        <a id="new" href="contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                        <button class="res"><i class="fa-solid fa-download"></i><a id="new2" style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
                     </li>
                 </ul>
             </div>
@@ -85,6 +91,10 @@
                     <li>
                         <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME"><span>CONTACT
                                 ME</span></a>
+                    </li>
+                    <li>
+                        <button class="res res1"><i class="fa-solid fa-download"></i><a  style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
+
                     </li>
                 </ul>
             </div>
@@ -129,10 +139,13 @@
                 <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
             </div>
 
+
             <a href="#foot" class="fa fa-angle-double-down new"></a>
 
 
         </div>
+
+
 
         <div class="image">
             <img class="profileIMG" src="profile_2.jpg">
@@ -168,18 +181,22 @@
 
 
     <script>
+
         $(".menu-btn").click(function () {
-            $(".link").slideToggle();
+            if ($( ".menu-btn" ).hasClass( "open" )) {
+                $(".link").css('transform', 'scale(0)');
+            }
+            else
+            $(".link").css('transform', 'translateX(-88px)');
         });
-
-
+    
         $(".link").click(function () {
-            $(".link").slideToggle();
+            $(".link").css('transform', 'scale(0)');
             $(".menu-btn").removeClass("open");
             menuOpen = false;
         });
-
-
+    
+    
         const menuBtn = document.querySelector('.menu-btn');
         let menuOpen = false;
         menuBtn.addEventListener('click', () => {
