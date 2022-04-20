@@ -203,18 +203,22 @@
 
 
     <script>
+
         $(".menu-btn").click(function () {
-            $(".link").slideToggle();
+            if ($( ".menu-btn" ).hasClass( "open" )) {
+                $(".link").css('transform', 'scale(0)');
+            }
+            else
+            $(".link").css('transform', 'translateX(-90px)');
         });
-
-
+    
         $(".link").click(function () {
-            $(".link").slideToggle();
+            $(".link").css('transform', 'scale(0)');
             $(".menu-btn").removeClass("open");
             menuOpen = false;
         });
-
-
+    
+    
         const menuBtn = document.querySelector('.menu-btn');
         let menuOpen = false;
         menuBtn.addEventListener('click', () => {
