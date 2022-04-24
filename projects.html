@@ -5,36 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    
+    <title>Contact</title>
+
     <!-- FONT AWESOME 5 -->
     <script src="https://kit.fontawesome.com/b1efcbdff7.js" crossorigin="anonymous"></script>
 
 
     <!-- FOR FONT-STYLE -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        @media(min-width:768px) {
-            .footer {
-                margin-top: 700px;
-            }
-        }
-
-
-        @media(max-width:480px) {
-            .footer {
-                margin-top: 850px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -67,6 +52,8 @@
 
 
 
+    <div class="wrap">
+
     <!-- NAVBAR -->
     <div class="navbar" id="myTopnav">
 
@@ -92,9 +79,7 @@
                     <li>
                         <a id="new" href="contact.html">CONTACT</a>
                     </li>
-                    <li>
-                        <button class="res"><i class="fa-solid fa-download"></i><a id="new2" style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -122,8 +107,8 @@
 
     </div>
 
-
     <!-- SVG BACKGROUND -->
+
     <svg viewBox="0 0 500 200" preserveAspectRatio="xMinYMin meet">
 
         <path d="M0, 100 C150, 200 350,
@@ -139,54 +124,47 @@
     </svg>
 
 
-    <!-- PROJECTS SLIDER -->
-    <div class="container">
-        <div class="testimonial">
-            <div class="slide-row" id="slide">
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            This was my FIRST ever Project in the World of Web-Dev :)<br>
-                            <span>Languages used</span> : HTML5, CSS3.<br> <br>
-                            <a href="https://kvarunkk.github.io/Biodata/" target="_blank" class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/Biodata" target="_blank" class="proLink">Github</a>
-                        </p>
-                    </div>
-                    <div class="user-img">
-                        <img src="mock-1.png">
-                    </div>
-                </div>
 
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            Learnt a lot while making this Website!<br>
-                            <span>Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
-                            <a href="https://kvarunkk.github.io/fLUCK/" target="_blank" class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/fLUCK" target="_blank" class="proLink">Github</a>
-                        </p>
-                    </div>
-                    <div class="user-img">
-                        <img src="mock-2.png">
-                    </div>
-                </div>
 
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            Built a Template for Portfolios.<br>
-                            <span>Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
-                            <a href="https://kvarunkk.github.io/Portfolio-Sample/" target="_blank"
-                                class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/Portfolio-Sample" target="_blank"
-                                class="proLink">Github</a>
-                        </p>
-                    </div>
-                    <div class="user-img">
-                        <img src="mock-3.png">
-                    </div>
-                </div>
-            </div>
+    <div class="form-block">
+        <!-- FORM -->
+        <div class="div4" id="div4">
+
+            <form class="form" action="https://formsubmit.co/935fd48354b6dcc0c400f8e093a1324f" method="POST">
+                <input type="hidden" name="_next" value="https://kvarunkk.github.io/Varun_PORTFOLIO/Thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                YOUR NAME: <br><br><input class="type1" type="text" name="name" required>
+                <br><br>
+                YOUR E-MAIL: <br><br><input class="type2" type="email" name="email" required>
+                <br><br>
+                YOUR MESSAGE: <br><br><textarea maxlength="500" rows="4" cols="20" name="message"></textarea>
+                <br><br>
+                <input class="sub" type="submit" value="SUBMIT">
+            </form>
+
+        </div>
+
+
+
+        <div class="side">
+            <p>
+                Hi there, I hope you're doing Great.<br>
+                I'm an Undergraduate at IIT Kharagpur.<br><br>
+                <span class="imp1">I provide Web Development/Web Design Services and I'm available to work
+                    remotely.</span><br>
+                <br>
+                <br>
+                <span class="imp2">Languages : HTML5, CSS3, JavaScript.</span><br>
+                <span class="imp2">Frameworks : Bootstrap, jQuery.</span><br>
+                <span class="imp2">Softwares : Figma, Git.</span><br><br><br>
+                You can fill the form for
+                queries related to work. <br>
+                Let me know how can I help you!
+                <br>
+                <br>
+                Regards<br>
+                Varun ;)
+            </p>
         </div>
     </div>
 
@@ -200,23 +178,30 @@
     </div>
 
 
-
+    </div>
 
 
     <!-- JAVASCRIPT/ JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js"></script>
 
+    <script src="index.js"></script>
 
 
     <script>
 
-        $(".menu-btn").click(function () {
+$(".menu-btn").click(function () {
             if ($( ".menu-btn" ).hasClass( "open" )) {
                 $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".side").css('opacity',  '1');
+                $(".form-block").css('opacity',  '1');
             }
-            else
-            $(".link").css('transform', 'translateX(90%)');
+            else{
+                $(".link").css('transform', 'translateX(90%)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
+                $(".side").css('opacity',  '0.7');
+                $(".form-block").css('opacity',  '0.1');
+            }
         });
     
         $(".link").click(function () {
@@ -238,8 +223,6 @@
             }
         });
     </script>
-
-
 
 </body>
 
