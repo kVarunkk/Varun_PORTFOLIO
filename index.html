@@ -44,6 +44,7 @@
         </div>
     </div>
 
+    <div class="wrap">
 
     <!-- NAVBAR -->
     <div class="navbar" id="myTopnav">
@@ -59,19 +60,19 @@
 
             <div class="link" id="linkl" >
                 <ul>
-                    <li>
-                        <a id="new" href="index.html">ABOUT</a>
+                    <li >
+                        <a id="new" class="list" href="index.html">ABOUT</a>
                     </li>
                     <hr>
-                    <li>
-                        <a id="new" href="projects.html">PROJECTS</a>
+                    <li >
+                        <a id="new" class="list" href="projects.html">PROJECTS</a>
                     </li>
                     <hr>
-                    <li>
-                        <a id="new" href="contact.html">CONTACT</a>
+                    <li >
+                        <a id="new" class="list" href="contact.html">CONTACT</a>
                     </li>
-                    <li>
-                        <button class="res"><i class="fa-solid fa-download"></i><a id="new2" style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
+                    <li >
+                        <a id="new2" class="list"  href="RESUME.pdf" download><button class="res"><i class="fa-solid fa-download"></i>RESUME</button></a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +94,7 @@
                                 ME</span></a>
                     </li>
                     <li>
-                        <button class="res res1"><i class="fa-solid fa-download"></i><a  style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
+                        <a  href="RESUME.pdf" download><button class="res res1"><i class="fa-solid fa-download"></i>RESUME</button></a>
 
                     </li>
                 </ul>
@@ -168,7 +169,8 @@
             Alt="web counter" border="0" /></a>
     </div>
 
-
+    
+    </div>
 
 
 
@@ -185,17 +187,24 @@
         $(".menu-btn").click(function () {
             if ($( ".menu-btn" ).hasClass( "open" )) {
                 $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".grid1").css('opacity',  '1');
             }
-            else
+            else{
             $(".link").css('transform', 'translateX(90%)');
+            $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
+            $(".grid1").css('opacity',  '0.1');
+            }
         });
     
-        $(".link").click(function () {
+        $(".list").click(function () {
             $(".link").css('transform', 'scale(0)');
             $(".menu-btn").removeClass("open");
             menuOpen = false;
         });
-    
+
+        
+
     
         const menuBtn = document.querySelector('.menu-btn');
         let menuOpen = false;
@@ -209,6 +218,10 @@
             }
         });
     </script>
+
+
+
+
 
 
 </body>
