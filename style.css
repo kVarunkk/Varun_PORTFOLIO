@@ -1,1013 +1,229 @@
-/* GENERAL STUFF */
-
-body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-p {
-    font-size: large;
-    font-weight: 600;
-    line-height: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-
-
-
-
-
-/* FOR SVG BACKGROUND */
-svg {
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    z-index: -1;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.newSVG {
-    display: none;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
 
+    <!-- FONT AWESOME 5 -->
+    <script src="https://kit.fontawesome.com/b1efcbdff7.js" crossorigin="anonymous"></script>
 
 
+    <!-- FOR FONT-STYLE -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+    </style>
 
-/* PRELOADER START  */
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background-color: black;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-.lds-ellipsis {
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-top: 330px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.lds-ellipsis div {
-    position: absolute;
-    top: 33px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #fff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
+    <!-- PRELOADER -->
 
-.lds-ellipsis div:nth-child(1) {
-    left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
-}
+    <div class="wrapper">
+        <div class="lds-ellipsis">
+            <div>
 
-.lds-ellipsis div:nth-child(2) {
-    left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
+            </div>
+            <div>
 
-.lds-ellipsis div:nth-child(3) {
-    left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
+            </div>
+            <div>
 
-.lds-ellipsis div:nth-child(4) {
-    left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
-}
+            </div>
+            <div>
 
-@keyframes lds-ellipsis1 {
-    0% {
-        transform: scale(0);
-    }
+            </div>
+        </div>
+    </div>
 
-    100% {
-        transform: scale(1);
-    }
-}
 
-@keyframes lds-ellipsis3 {
-    0% {
-        transform: scale(1);
-    }
 
-    100% {
-        transform: scale(0);
-    }
-}
 
-@keyframes lds-ellipsis2 {
-    0% {
-        transform: translate(0, 0);
-    }
 
-    100% {
-        transform: translate(24px, 0);
-    }
-}
 
-/*  PRELOADER END  */
 
 
 
+    <div class="wrap">
 
+    <!-- NAVBAR -->
+    <div class="navbar" id="myTopnav">
 
-/* FOR SLIDE ANIMATIONS */
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
+        <div class="menu-btn" id="button1">
+            <div class="menu-btn__burger"></div>
+        </div>
 
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-/* DOWNWARDS ARROW */
+        <nav>
 
-.new {
-    color: rgb(0, 13, 255);
-    font-size: 60px;
-    margin-top: 140px;
-    margin-left: 300px;
-    animation: 1s ease-out 0s 1 slideInFromBottom;
-}
 
-.new:hover {
-    color: rgb(81, 90, 249);
-}
-
-
-
-/* FOR NAVBAR ONLY */
-nav {
-    background-image: linear-gradient(white, rgb(206, 203, 203));
-    margin: 0;
-    height: 45px;
-    /* box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2); */
-
-}
-
-ul {
-    margin-top: 0px;
-    list-style: none;
-    padding: 0;
-    /* To remove whitespace */
-    font-size: 0px;
-}
 
-li {
-    display: inline-block;
-    padding: 5px;
-}
+            <div class="link" id="linkl" >
+                <ul>
+                    <li>
+                        <a id="new" href="index.html">ABOUT</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" href="projects.html">PROJECTS</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" href="contact.html">CONTACT</a>
+                    </li>
+                    
+                </ul>
+            </div>
 
-a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    text-decoration: none;
-    margin: 0 10px;
-    color: rgb(145, 148, 151);
-}
 
+            <div class="link1" id="linkl1">
+                <ul>
+                    <li>
+                        <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME"><span>ABOUT ME</span></a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" class="navLink" href="projects.html"
+                            data-replace="PROJECTS"><span>PROJECTS</span></a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME"><span>CONTACT
+                                ME</span></a>
+                    </li>
+                    
+                </ul>
+            </div>
 
+        </nav>
 
-.navLink {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-}
+    </div>
 
-.navLink::before,
-.navLink::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-}
+    <!-- SVG BACKGROUND -->
 
-.navLink::before {
-    background-color: rgb(35, 44, 54);
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-}
+    <svg viewBox="0 0 500 200" preserveAspectRatio="xMinYMin meet">
 
-.navLink::after {
-    content: attr(data-replace);
-    height: 100%;
-    top: 0;
-    transform-origin: 100% 50%;
-    transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: rgb(35, 44, 54);
-}
+        <path d="M0, 100 C150, 200 350,
+0 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
+        </path>
+    </svg>
 
-.navLink:hover::before {
-    transform-origin: 0% 50%;
-    transform: scaleX(1);
-}
+    <svg class="newSVG" viewBox="0 0 150 200" preserveAspectRatio="xMinYMin meet">
 
-.navLink:hover::after {
-    transform: translate3d(0, 0, 0);
-}
+        <path d="M0, 100 C150, 200 350,
+0 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
+        </path>
+    </svg>
 
-.navLink span {
-    display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-}
 
-.navLink:hover span {
-    transform: translate3d(-200%, 0, 0);
-}
 
 
+    <div class="form-block">
+        <!-- FORM -->
+        <div class="div4" id="div4">
 
-.link {
-    position: absolute;
-    text-align: center;
-    height: 100%;
-    margin-right: 0;
-}
+            <form class="form" action="https://formsubmit.co/935fd48354b6dcc0c400f8e093a1324f" method="POST">
+                <input type="hidden" name="_next" value="https://kvarunkk.github.io/Varun_PORTFOLIO/Thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                YOUR NAME: <br><br><input class="type1" type="text" name="name" required>
+                <br><br>
+                YOUR E-MAIL: <br><br><input class="type2" type="email" name="email" required>
+                <br><br>
+                YOUR MESSAGE: <br><br><textarea maxlength="500" rows="4" cols="20" name="message"></textarea>
+                <br><br>
+                <input class="sub" type="submit" value="SUBMIT">
+            </form>
 
+        </div>
 
-/* .button {
-    float: right;
-    margin-top: 9px;
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-} */
 
-#times {
-    display: none;
-}
 
-.res{
-    transition: all .3s ease-in-out;
-}
+        <div class="side">
+            <p>
+                Hi there, I hope you're doing Great.<br>
+                I'm an Undergraduate at IIT Kharagpur.<br><br>
+                <span class="imp1">I provide Web Development/Web Design Services and I'm available to work
+                    remotely.</span><br>
+                <br>
+                <br>
+                <span class="imp2">Languages : HTML5, CSS3, JavaScript.</span><br>
+                <span class="imp2">Frameworks : Bootstrap, jQuery.</span><br>
+                <span class="imp2">Softwares : Figma, Git.</span><br><br><br>
+                You can fill the form for
+                queries related to work. <br>
+                Let me know how can I help you!
+                <br>
+                <br>
+                Regards<br>
+                Varun ;)
+            </p>
+        </div>
+    </div>
 
-.res:hover {
-    box-shadow: -3px 5px 3px 0px rgb(138, 130, 138);
-}
 
 
+    <!-- FOOTER -->
+    <div class="footer" id="foot">
+        <a href="mailto:varunkumawatleap2@gmail.com" class="fa fa-google old"></a>
+        <a href="https://www.linkedin.com/in/varun-kumawat-0a6b3a228" class="fa fa-linkedin old" target="_blank"></a>
+        <a href="https://github.com/kVarunkk" class="fa fa-github old" target="_blank"></a>
+    </div>
 
 
-.navbar {
-    transition: 750ms ease;
-    width: 100%;
-    margin-top: 0px;
-    box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2);
-}
+    </div>
 
 
+    <!-- JAVASCRIPT/ JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-@media(min-width:768px) {
+    <script src="index.js"></script>
 
-    .fa-download{
-        margin: 0px 5px 0 5px;
-    }
+
+    <script>
+
+$(".menu-btn").click(function () {
+            if ($( ".menu-btn" ).hasClass( "open" )) {
+                $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".side").css('opacity',  '1');
+                $(".form-block").css('opacity',  '1');
+            }
+            else{
+                $(".link").css('transform', 'translateX(90%)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
+                $(".side").css('opacity',  '0.7');
+                $(".form-block").css('opacity',  '0.1');
+            }
+        });
     
-    .res{
-        margin: 0px  0  0px 370px;
-        box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
-        color: rgb(238, 109, 109);
-        background-color: rgb(88, 88, 235);
-        border-radius: 5px;
-        border: none;
-        padding: 5px;      
-    }
-
-    li {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    /* .button {
-        visibility: hidden;
-    } */
-
-    .link{
-        visibility: hidden;
-    }
-
-    .link1 {
-        display: inline-block;
-        margin-top: 3px;
-        margin-left: 535px;
-    }
-
-    .link1 hr {
-        display: none;
-    }
-
-    .navbar {
-        padding-top: 10px;
-    }
+        $(".link").click(function () {
+            $(".link").css('transform', 'scale(0)');
+            $(".menu-btn").removeClass("open");
+            menuOpen = false;
+        });
     
-
-
-}
-
-@media(max-width:480px) {
-
-    .res{
-        margin-top: 90px;
-        display: flex;
-        box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
-        color: rgb(238, 109, 109);
-        background-color: rgb(88, 88, 235);
-        border-radius: 5px;
-        border: none;
-        padding: 5px;
-    }
-
-    .fa-download{
-        margin: 3px 5px 0 5px;
-    }
-
     
-
-    ul{
-        margin: 100px 20%;
-       
-    }
-
-    li {
-        display: block;
-        padding-top: 5px;
-        padding-bottom: 7px;
-        margin-bottom: 5px;
-    }
-
-    .link1 {
-        display: none;
-    }
-
-    .link {
-        float: right;
-        width: 50%;
-        margin-top: 0px;
-        background-color: rgb(235, 232, 232);
-        line-height: 70px;
-        z-index: 4;
-        box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
-        transform: scale(0);
-        padding: 5px;
-    }
-
-
-    hr {
-        border: 0;
-        height: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        width: 40px;
-    }
-
-    #new {
-        color: rgb(78, 78, 78);
-    }
-
-
-    /* for nav-bar toggle button */
-    .menu-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25px;
-        height: 25px;
-        float: right;
-        margin: 8px 10px 8px 85%;
-        transition: all .5s ease-in-out;
-        z-index: 5;
-        position: absolute;
-    }
-
-    .menu-btn__burger {
-        width: 22px;
-        height: 3px;
-        background: rgb(35, 44, 54);
-        border-radius: 5px;
-
-        transition: all .5s ease-in-out;
-    }
-
-    .menu-btn__burger::before,
-    .menu-btn__burger::after {
-        content: '';
-        position: absolute;
-        width: 22px;
-        height: 3px;
-        background: rgb(35, 44, 54);
-        border-radius: 5px;
-
-        transition: all .5s ease-in-out;
-    }
-
-    .menu-btn__burger::before {
-        transform: translateY(-6px);
-    }
-
-    .menu-btn__burger::after {
-        transform: translateY(6px);
-    }
-
-    .menu-btn.open .menu-btn__burger {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
-    }
-
-    .menu-btn.open .menu-btn__burger::before {
-        transform: rotate(45deg) translate(35px, -35px);
-    }
-
-    .menu-btn.open .menu-btn__burger::after {
-        transform: rotate(-45deg) translate(35px, 35px);
-    }
-
-
-
-}
-
-/* NAVBAR ONLY ENDS */
-
-
-
-
-
-
-
-/* FOR PAGE-1 */
-
-.grid1 {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 70px;
-    margin-bottom: 150px;
-}
-
-
-.introduction {
-    width: 50%;
-}
-
-.res1{
-    
-    /* margin-bottom: -20px; */
-    margin-left: 320px;
-}
-
-.change {
-    font-weight: lighter;
-    color: #898989;
-}
-
-
-.name {
-    width: 60%;
-    text-align: center;
-    margin-top: 70px;
-    margin-left: 100px;
-    font-size: 100px;
-    line-height: 150px;
-    font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-
-.image {
-    width: 50%;
-    text-align: center;
-
-}
-
-
-.profileIMG {
-    width: 500px;
-    margin-top: 0px;
-    border-radius: 15px;
-    animation: .75s ease-out 0s 1 slideInFromBottom;
-    box-shadow: -3px 6px 5px 0px rgb(154, 158, 157, 1);
-}
-
-
-
-
-/* for typewriter text effect */
-
-.container1 {
-    box-sizing: border-box;
-    height: 10vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    animation: 1.2s ease-out 0s 1 slideInFromLeft;
-}
-
-.container1 p {
-    font-size: 2.0rem;
-    padding: 0.5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    overflow: hidden;
-    margin-left: 135px;
-    font-family: 'Montserrat', sans-serif;
-    color: #4f4f4f;
-}
-
-.container1 p span.typed-text {
-    font-weight: normal;
-    color: #dd7732;
-}
-
-.container1 p span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-}
-
-.container1 p span.cursor.typing {
-    animation: none;
-}
-
-@keyframes blink {
-    0% {
-        background-color: #ccc;
-    }
-
-    49% {
-        background-color: #ccc;
-    }
-
-    50% {
-        background-color: transparent;
-    }
-
-    99% {
-        background-color: transparent;
-    }
-
-    100% {
-        background-color: #ccc;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* PAGE-2 */
-
-.container {
-    width: 1000px;
-    height: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 0 0px 10px -4px rgba(0, 0, 0, .2);
-    border-radius: 10px;
-
-}
-
-.testimonial {
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
-.slide-row {
-    display: flex;
-    width: 3000px;
-    transition: 0.5s;
-}
-
-.slide-col {
-    width: 1000px;
-    height: 450px;
-    position: relative;
-}
-
-.user-text {
-    background: rgb(239, 226, 236);
-
-    width: 600px;
-    height: 320px;
-    position: absolute;
-    left: 70px;
-    top: 55%;
-    transform: translateY(-50%);
-    border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 2;
-    box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2);
-}
-
-.proLink {
-    font-size: larger;
-    margin: 10px;
-    color: #074279;
-}
-
-.user-img {
-    position: absolute;
-    top: 10px;
-    right: 75px;
-    height: 100%;
-}
-
-.user-img img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-
-
-
-
-
-
-
-
-/*FOR PAGE-3  */
-
-
-.form-block {
-    display: flex;
-    margin-bottom: 100px;
-}
-
-.side {
-    margin-top: 50px;
-    margin-right: 130px;
-    color: #4f4f4f;
-    animation: 0.4s ease-out 0s 1 slideInFromRight;
-}
-
-.imp1 {
-    font-family: 'Merriweather', serif;
-
-    color: #ed8f25;
-}
-
-.imp2 {
-    color: #074279;
-}
-
-
-
-
-/* FORM STARTS */
-
-.div4 {
-    margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 250px;
-    margin-bottom: 80px;
-    width: 35%;
-    background-color: rgba(242, 213, 213, 0.663);
-    text-align: center;
-    border-radius: 20px;
-    animation: 0.5s ease-out 0s 1 slideInFromBottom;
-}
-
-.form {
-    width: 100%;
-    height: 60%;
-    text-align: center;
-    padding-top: 65px;
-    font-size: 17px;
-    font-family: 'Shippori Antique B1', sans-serif;
-    animation: 0.5s ease-out 0s 1 slideInFromBottom;
-}
-
-.type1,
-.type2 {
-
-    border: 3px solid #FFF;
-    border-radius: 8px;
-    background-color: #eee;
-    width: 60%;
-    height: 22px;
-    font-size: large;
-
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-}
-
-.sub {
-
-    font-size: 15px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    background-color: #074279;
-    border-radius: 10px;
-    border: none;
-    padding: 10px 10px;
-    color: #FFF;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-* .sub:hover {
-    background-color: #51c7e7
-}
-
-textarea {
-    border: 3px solid #FFF;
-    border-radius: 8px;
-    background-color: #eee;
-    width: 60%;
-    font-size: large;
-}
-
-/* FORM ENDS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER & FONTAWESOME ICONS */
-.footer {
-    background-color: rgb(66, 66, 66);
-    text-align: center;
-
-}
-
-.old {
-    display: inline-block;
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: auto;
-}
-
-.fa-google:hover {
-    color: #d3cfce;
-}
-
-.fa-linkedin:hover {
-    color: #d3cfce;
-}
-
-.fa-github:hover {
-    color: #d3cfce;
-}
-
-.fa-google {
-    margin-right: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.fa-linkedin {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    color: white;
-}
-
-.fa-github {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    color: white;
-}
-
-.counterimg {
-    margin-left: 715px;
-    margin-bottom: 20px;
-    box-shadow: -3px 6px 5px 0px rgb(42, 42, 42);
-}
-
-.footer2 {
-    background-color: #545454;
-    margin: 0;
-}
-
-.footer2 img {
-    width: 50px;
-    margin: 20px;
-}
-
-
-
-
-
-
-
-/* THANK-YOU PAGE */
-.thankHead {
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 100px;
-    font-family: 'Merriweather', serif;
-    margin-top: 50px;
-}
-
-
-.quote {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 60px;
-    color: rgb(241, 128, 128);
-    text-align: center;
-    line-height: 70px;
-}
-
-.thankChild {
-    text-align: center;
-    margin: 100px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.thankA {
-    font-size: x-large;
-    color: #1f8df5;
-}
-
-.user-text a {
-    font-family: 'Raleway', sans-serif;
-
-}
-
-
-/* GENERAL MEDIA-QUERIES */
-
-@media(max-width : 480px) {
-
-    .res1{
-        display: none;
-    }
-
-    .new1SVG {
-        display: none;
-        /* margin-top: -10px; */
-    }
-
-    .newSVG {
-        display: inline-block;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        z-index: -1;
-    }
-
-
-    svg{
-        margin-top: -10px;
-    }
-
-    .counterimg {
-        margin-left: 160px;
-    }
-
-    .container1 {
-        margin-bottom: 160px;
-    }
-
-    .container1 p {
-        font-size: 25px;
-        margin-left: 35px;
-    }
-
-    .user-text {
-        left: 10px;
-    }
-
-
-    .user-text p {
-        margin-top: 0px;
-    }
-
-    .new {
-        display: none;
-    }
-
-    .container {
-        width: 380px;
-        box-shadow: none;
-    }
-
-    .user-text {
-        width: 270px;
-    }
-
-    .slide-row {
-        width: 1800px;
-    }
-
-    .grid1 {
-        flex-direction: column;
-    }
-
-    .profileIMG {
-        width: 300px;
-    }
-
-    .name {
-        margin: 0px auto 4px auto;
-        font-size: 100px;
-    }
-
-    .grid1 div {
-        width: 100%;
-    }
-
-    .div4 {
-        width: 80%;
-        margin-left: 40px;
-        margin-bottom: 120px;
-    }
-
-    .side {
-        margin-right: 40px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-    }
-
-    .form-block {
-        flex-direction: column-reverse;
-    }
-
-    .type1,
-    .type2 {
-
-        width: 65%;
-
-    }
-
-    textarea {
-        width: 65%;
-    }
-
-
-}
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
