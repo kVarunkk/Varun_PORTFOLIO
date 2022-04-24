@@ -970,6 +970,7 @@ textarea {
     .container {
         width: 380px;
         box-shadow: none;
+        top : 40%;
     }
 
     .user-text {
