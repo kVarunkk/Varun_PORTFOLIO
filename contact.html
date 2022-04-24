@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    
+
     <!-- FONT AWESOME 5 -->
     <script src="https://kit.fontawesome.com/b1efcbdff7.js" crossorigin="anonymous"></script>
 
@@ -52,7 +52,7 @@
 
 
 
-
+    <div class="wrap">
 
     <!-- NAVBAR -->
     <div class="navbar" id="myTopnav">
@@ -79,9 +79,7 @@
                     <li>
                         <a id="new" href="contact.html">CONTACT</a>
                     </li>
-                    <li>
-                        <button class="res"><i class="fa-solid fa-download"></i><a id="new2" style="color: rgb(255, 234, 0);" href="RESUME.pdf" download>RESUME</a></button>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -180,6 +178,8 @@
     </div>
 
 
+    </div>
+
 
     <!-- JAVASCRIPT/ JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -189,12 +189,19 @@
 
     <script>
 
-        $(".menu-btn").click(function () {
+$(".menu-btn").click(function () {
             if ($( ".menu-btn" ).hasClass( "open" )) {
                 $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".side").css('opacity',  '1');
+                $(".form-block").css('opacity',  '1');
             }
-            else
-            $(".link").css('transform', 'translateX(90%)');
+            else{
+                $(".link").css('transform', 'translateX(90%)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
+                $(".side").css('opacity',  '0.7');
+                $(".form-block").css('opacity',  '0.1');
+            }
         });
     
         $(".link").click(function () {
