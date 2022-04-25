@@ -316,10 +316,10 @@ a {
     }
     
     .res{
-        margin: 0px  0  0px 390px;
+        
         box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
         color: black;
-        /* background-color: rgb(88, 193, 235); */
+
         border-radius: 5px;
         border: 2px solid rgb(78, 78, 78);
         padding: 8px;      
@@ -330,9 +330,7 @@ a {
         margin-right: 10px;
     }
 
-    /* .button {
-        visibility: hidden;
-    } */
+    
 
     .link{
         visibility: hidden;
