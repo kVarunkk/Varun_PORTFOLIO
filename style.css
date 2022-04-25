@@ -278,13 +278,7 @@ a {
 }
 
 
-/* .button {
-    float: right;
-    margin-top: 9px;
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-} */
+
 
 #times {
     display: none;
@@ -504,11 +498,7 @@ a {
     width: 50%;
 }
 
-.res1{
-    
-    /* margin-bottom: -20px; */
-    margin-left: 320px;
-}
+
 
 .change {
     font-weight: lighter;
