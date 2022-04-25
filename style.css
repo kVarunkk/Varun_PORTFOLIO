@@ -270,9 +270,9 @@ a {
 
 
 .link {
-    position: absolute;
+    position: fixed;
     text-align: center;
-    height: 90%;
+    height: 100%;
     margin-right: 0;
     
 }
@@ -560,13 +560,13 @@ a {
 }
 
 .container1 p {
-    font-size: 2.0rem;
+    font-size: 1.7rem;
     padding: 0.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
-    margin-left: 135px;
+    margin-left: 145px;
     font-family: 'Montserrat', sans-serif;
     color: #4f4f4f;
 }
