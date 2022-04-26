@@ -51,7 +51,7 @@
 
 
         <div class="menu-btn" id="button1">
-            <div class="menu-btn__burger"></div>
+            <div class="menu-btn__burger" id="inner_btn" ></div>
         </div>
 
         <nav>
@@ -194,6 +194,39 @@
             $(".grid1").css('opacity',  '0.1');
             }
         });
+        
+        
+        $(".list").click(function () {
+            $(".link").css('transform', 'scale(0)');
+            $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+            $(".grid1").css('opacity',  '1');
+            $(".menu-btn").removeClass("open");
+            menuOpen = false;
+        });
+
+
+
+        // FOR CLOSING SIDE MENU WHEN CLICKED OUTSIDE IT.
+        
+        $(document).click(function (e) {
+        
+            var side_menu = document.getElementById('linkl');
+            var menu_button = document.getElementById('button1');
+            var inner_button = document.getElementById('inner_btn');
+
+
+            if (e.target != side_menu && e.target != menu_button && e.target != inner_button ) {
+                $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".grid1").css('opacity',  '1');
+                $(".menu-btn").removeClass("open");
+                menuOpen = false;
+            }
+            var clicker =  e.target;
+            console.log(clicker);
+        });
+        
+        
     
      
         const menuBtn = document.querySelector('.menu-btn');
