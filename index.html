@@ -15,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@1,300&family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
     </style>
-    
+
     <!-- FOR FAVICON -->
     <link rel="shortcut icon" href="newImage.ico" type="image/x-icon">
 
@@ -96,7 +96,12 @@
                         <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME"><span>CONTACT
                                 ME</span></a>
                     </li>
+                    
+
+                    
                 </ul>
+
+
             </div>
 
         </nav>
@@ -139,7 +144,9 @@
                 <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
             </div>
 
-            <a style="display: inline-block; margin: 6% 50% 0% 37%; width: 40px;" href="RESUME.pdf" download><button class="res res1"><i class="fa-solid fa-download"></i>RESUME</button></a>
+            <!-- MARGIN RIGHT CAUSES MAJOR OVERFLOW IN MOBILE VERSION -->
+            <a style="display: block; margin: 10% 40% 0% 37%; width: 5rem; font-weight: bold;" href="RESUME.pdf" download><button class="res res1"><i class="fa-solid fa-download"></i>RESUME</button></a>
+
 
 
             <a href="#foot" class="fa fa-angle-double-down new"></a>
@@ -182,7 +189,6 @@
     <script src="index.js"></script>
     <script src="index2.js"></script>
 
-    <script>document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio));</script>
 
     <script>
 
@@ -198,8 +204,7 @@
             $(".grid1").css('opacity',  '0.1');
             }
         });
-        
-        
+    
         $(".list").click(function () {
             $(".link").css('transform', 'scale(0)');
             $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
@@ -226,12 +231,16 @@
                 $(".menu-btn").removeClass("open");
                 menuOpen = false;
             }
-            
+            // var clicker =  e.target;
+            // console.log(clicker);
         });
+
+
+
+
         
-        
+
     
-     
         const menuBtn = document.querySelector('.menu-btn');
         let menuOpen = false;
         menuBtn.addEventListener('click', () => {
