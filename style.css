@@ -1,3 +1,10 @@
+
+ 
+
+
+
+
+
 /* GENERAL STUFF */
 
 body {
@@ -163,24 +170,12 @@ svg {
 }
 
 
-/* DOWNWARDS ARROW */
 
-.new {
-    color: rgb(0, 13, 255);
-    font-size: 60px;
-    margin-top: 80px;
-    margin-left: 300px;
-    animation: 1s ease-out 0s 1 slideInFromBottom;
-}
-
-.new:hover {
-    color: rgb(81, 90, 249);
-}
 
 
 .wrap{
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 
@@ -278,7 +273,13 @@ a {
 }
 
 
-
+/* .button {
+    float: right;
+    margin-top: 9px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+} */
 
 #times {
     display: none;
@@ -308,12 +309,14 @@ a {
     .fa-download{
         margin: 0px 5px 0 5px;
     }
+
+
     
     .res{
-        
+        /* margin: 0px  0  0px 390px; */
         box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
         color: black;
-
+        /* background-color: rgb(88, 193, 235); */
         border-radius: 5px;
         border: 2px solid rgb(78, 78, 78);
         padding: 8px;      
@@ -324,7 +327,9 @@ a {
         margin-right: 10px;
     }
 
-    
+    /* .button {
+        visibility: hidden;
+    } */
 
     .link{
         visibility: hidden;
@@ -333,7 +338,8 @@ a {
     .link1 {
         display: inline-block;
         margin-top: 3px;
-        margin-left: 535px;
+        margin-left: 36%;
+        
     }
 
     .link1 hr {
@@ -496,6 +502,7 @@ a {
 
 .introduction {
     width: 50%;
+    text-align: center;
 }
 
 
@@ -511,7 +518,7 @@ a {
     text-align: center;
     margin-top: 70px;
     margin-left: 100px;
-    font-size: 100px;
+    font-size: 7.5rem;
     line-height: 150px;
     font-weight: bold;
     font-family: 'Bebas Neue', cursive;
@@ -542,7 +549,8 @@ a {
     box-sizing: border-box;
     height: 10vh;
     display: flex;
-    justify-content: flex-start;
+    
+    /* justify-content: flex-start; */
     align-items: center;
     animation: 1.2s ease-out 0s 1 slideInFromLeft;
 }
@@ -554,9 +562,10 @@ a {
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
-    margin-left: 145px;
+    margin-left: 21%;
     font-family: 'Montserrat', sans-serif;
     color: #4f4f4f;
+    
 }
 
 .container1 p span.typed-text {
@@ -597,6 +606,26 @@ a {
         background-color: #ccc;
     }
 }
+
+
+/* DOWNWARDS ARROW */
+
+.new {
+    color: rgb(0, 13, 255);
+    font-size: 60px;
+    margin-top: 80px;
+    margin-right: 19%;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.new:hover {
+    color: rgb(81, 90, 249);
+}
+
+
+
+
+
 
 
 
@@ -688,8 +717,6 @@ p > .language{
 
 
 
-
-
 /*FOR PAGE-3  */
 
 
@@ -699,7 +726,7 @@ p > .language{
 }
 
 .side {
-    margin-top: 50px;
+    margin-top: 9%;
     margin-right: 130px;
     color: #4f4f4f;
     animation: 0.4s ease-out 0s 1 slideInFromRight;
@@ -721,7 +748,7 @@ p > .language{
 /* FORM STARTS */
 
 .div4 {
-    margin-top: 70px;
+    margin-top: 10%;
     margin-left: 70px;
     margin-right: 250px;
     margin-bottom: 80px;
@@ -804,7 +831,11 @@ textarea {
 .footer {
     background-color: rgb(66, 66, 66);
     text-align: center;
+    margin-top: 20%;
+}
 
+.footer1{
+    margin-top: 50%;
 }
 
 .old {
@@ -915,6 +946,8 @@ textarea {
         display: none;
     }
 
+
+
     .new1SVG {
         display: none;
         /* margin-top: -10px; */
@@ -944,7 +977,7 @@ textarea {
     .container1 p {
         font-size: 25px;
         margin-left: auto;
-        margin-right : auto;
+        margin-right: auto;
     }
 
     .user-text {
@@ -961,9 +994,9 @@ textarea {
     }
 
     .container {
-        width: 380px;
+        width: 359px;
         box-shadow: none;
-        top : 40%;
+        top: 40%;
     }
 
     .user-text {
