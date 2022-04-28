@@ -16,7 +16,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
     </style>
-    
+
     <!-- FOR FAVICON -->
     <link rel="shortcut icon" href="newImage.ico" type="image/x-icon">
 
@@ -62,7 +62,7 @@
 
 
         <div class="menu-btn" id="button1">
-            <div class="menu-btn__burger" id="inner_btn"></div>
+            <div class="menu-btn__burger" id="inner_btn" ></div>
         </div>
 
         <nav>
@@ -174,7 +174,7 @@
 
 
     <!-- FOOTER -->
-    <div class="footer" id="foot">
+    <div class="footer footer4" id="foot">
         <a href="mailto:varunkumawatleap2@gmail.com" class="fa fa-google old"></a>
         <a href="https://www.linkedin.com/in/varun-kumawat-0a6b3a228" class="fa fa-linkedin old" target="_blank"></a>
         <a href="https://github.com/kVarunkk" class="fa fa-github old" target="_blank"></a>
@@ -206,7 +206,7 @@ $(".menu-btn").click(function () {
                 $(".form-block").css('opacity',  '0.1');
             }
         });
-        
+    
         
         $(".list").click(function () {
             $(".link").css('transform', 'scale(0)');
@@ -235,7 +235,8 @@ $(".menu-btn").click(function () {
             $(".menu-btn").removeClass("open");
             menuOpen = false;
         }
-        
+        // var clicker =  e.target;
+        // console.log(clicker);
     });
     
     
