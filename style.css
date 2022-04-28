@@ -1,6 +1,9 @@
 
- 
+ /* *{ outline: 1px solid #f00 !important;
+ }* */
 
+
+ 
 
 
 
@@ -173,10 +176,7 @@ svg {
 
 
 
-.wrap{
-    position: relative;
-    /* z-index: 0; */
-}
+
 
 
 /* FOR NAVBAR ONLY */
@@ -832,6 +832,8 @@ textarea {
     background-color: rgb(66, 66, 66);
     text-align: center;
     margin-top: 20%;
+    
+    /* position: relative; */
 }
 
 .footer1{
@@ -940,6 +942,8 @@ textarea {
 
 /* GENERAL MEDIA-QUERIES */
 
+
+/* FOR MOBILES */
 @media(max-width : 480px) {
 
     .res1{
@@ -1053,3 +1057,90 @@ textarea {
 
 
 }
+
+
+
+/* FOR TABLETS AND LANDSCAPE VIEW IN MOBILES*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .link{
+        visibility: hidden;
+    }
+
+    .grid1{
+        margin-top: 20%;
+        margin-bottom: 0px;
+    }
+
+    .profileIMG{
+        width: 370px;
+        margin-top: 80px;
+    }
+  
+    .new{
+        visibility: hidden;
+    }
+
+    .link1{
+        margin-left: 25%;
+    }
+
+    .name{
+        font-size: 5rem;
+        margin-left: 10%;
+    }
+
+    .container1 p{
+        font-size: 1.2rem;
+        margin-left: 15%;
+    }
+
+    .slide-row{
+        width: 2500px;
+    }
+
+    .container{
+        width: 80%;
+        margin-top: 23%;
+    }
+
+    .user-text{
+        width: 400px;
+    }
+
+    .user-img{
+        right: 110px;
+    }
+
+    /* FOR projects.html */
+    .footer1{
+        margin-top: 130%;
+    }
+
+    /* FOR index,html */
+    .footer3{
+        margin-top: 47%;
+    }
+
+    /* FOR contact.html */
+    .footer4{
+        margin-top: 40%;
+    }
+
+    .div4{
+        margin-right: 80px;
+        margin-left: 30px;
+        width: 130%;
+        height: 60%;
+    }
+
+    .side{
+        margin-right: 10%;
+    }
+
+
+}
+
