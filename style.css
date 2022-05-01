@@ -184,6 +184,7 @@ nav {
     background-image: linear-gradient(white, rgb(206, 203, 203));
     margin: 0;
     height: 45px;
+    text-align : center;
     /* box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2); */
 
 }
@@ -273,13 +274,7 @@ a {
 }
 
 
-/* .button {
-    float: right;
-    margin-top: 9px;
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-} */
+
 
 #times {
     display: none;
@@ -327,9 +322,7 @@ a {
         margin-right: 10px;
     }
 
-    /* .button {
-        visibility: hidden;
-    } */
+    
 
     .link{
         visibility: hidden;
@@ -338,7 +331,7 @@ a {
     .link1 {
         display: inline-block;
         margin-top: 3px;
-        margin-left: 36%;
+        
         
     }
 
