@@ -2,10 +2,11 @@
  /* *{ outline: 1px solid #f00 !important;
  }* */
 
+
+
 html{
     scroll-behavior: smooth;
 } 
- 
 
 
 
@@ -186,7 +187,7 @@ nav {
     background-image: linear-gradient(white, rgb(206, 203, 203));
     margin: 0;
     height: 45px;
-    text-align : center;
+    text-align: center;
     /* box-shadow: 0 13px 15px -2px rgba(0, 0, 0, .2); */
 
 }
@@ -276,7 +277,13 @@ a {
 }
 
 
-
+/* .button {
+    float: right;
+    margin-top: 9px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+} */
 
 #times {
     display: none;
@@ -324,7 +331,9 @@ a {
         margin-right: 10px;
     }
 
-    
+    /* .button {
+        visibility: hidden;
+    } */
 
     .link{
         visibility: hidden;
@@ -333,7 +342,7 @@ a {
     .link1 {
         display: inline-block;
         margin-top: 3px;
-        
+        /* margin-left: 36%; */
         
     }
 
@@ -691,8 +700,12 @@ a {
 .user-img {
     position: absolute;
     top: 10px;
-    right: 75px;
+    right: -8px;
     height: 100%;
+}
+
+.mob{
+    display: none;
 }
 
 .user-img img {
@@ -1001,7 +1014,25 @@ textarea {
     .container {
         width: 359px;
         box-shadow: none;
-        top: 50%;
+        top: 48%;
+    }
+
+    .lap{
+        display: none;
+    }
+
+    .mob{
+        display: block;
+    }
+
+    .user-img{
+        right: 60px;
+        top: 23%;
+        /* height: 60%; */
+    }
+
+    .user-img img{
+        height: 60%;
     }
 
     .user-text {
@@ -1009,7 +1040,7 @@ textarea {
     }
 
     .slide-row {
-        width: 1800px;
+        width: 2500px;
     }
 
     .grid1 {
@@ -1085,9 +1116,9 @@ and (max-device-width : 1024px) {
         visibility: hidden;
     }
 
-    .link1{
+    /* .link1{
         margin-left: 25%;
-    }
+    } */
 
     .name{
         font-size: 5rem;
@@ -1105,7 +1136,8 @@ and (max-device-width : 1024px) {
 
     .container{
         width: 80%;
-        margin-top: 23%;
+        top: 0%;
+        margin-top: 55%;
     }
 
     .user-text{
@@ -1113,7 +1145,11 @@ and (max-device-width : 1024px) {
     }
 
     .user-img{
-        right: 110px;
+        right: 30px;
+    }
+
+    .mob{
+        display: none;
     }
 
     /* FOR projects.html */
