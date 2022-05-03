@@ -84,7 +84,7 @@
             <div class="link1" id="linkl1">
                 <ul>
                     <li>
-                        <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME"><span>ABOUT ME</span></a>
+                        <a id="new" class="navLink active" href="index.html" data-replace="ABOUT ME"><span>ABOUT ME</span></a>
                     </li>
                     <hr>
                     <li>
@@ -256,6 +256,18 @@
     </script>
 
 
+    <script>
+    // Add active class to the current button (highlight it)
+    
+    var btns = document.getElementsByClassName("navLink");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
 
 
 
