@@ -4,17 +4,30 @@
 
 
 
+html{
+    scroll-behavior: smooth;
+} 
 
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #074279;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 50px;
+}
 
 
 
 
 /* GENERAL STUFF */
-
-
-html{
-    scroll-behavior: smooth;
-} 
 
 body {
     margin: 0px;
@@ -32,6 +45,8 @@ p {
 .wrap{
     margin: 0;
     padding: 0;
+    margin-bottom: 150px;
+    min-height: 100vh;
 }
 
 
@@ -49,6 +64,10 @@ svg {
 
 .newSVG {
     display: none;
+}
+
+#wave{
+    /* min-height: 50vh; */
 }
 
 
@@ -265,7 +284,7 @@ a {
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.navLink:hover span {
+ .navLink:hover span {
     transform: translate3d(-200%, 0, 0);
 }
 
@@ -275,8 +294,7 @@ a {
     position: fixed;
     text-align: center;
     height: 100%;
-    margin-right: 0;
-    
+    margin-right: 0; 
 }
 
 
@@ -504,6 +522,7 @@ a {
     flex-wrap: nowrap;
     margin-top: 70px;
     margin-bottom: 150px;
+    min-height: calc(100vh - 223.6px);
 }
 
 
@@ -679,7 +698,7 @@ a {
 }
 
 .user-text {
-    background: rgb(239, 226, 236);
+    background-image:linear-gradient(rgb(217, 248, 254),white) ;
 
     width: 600px;
     height: 320px;
@@ -734,10 +753,11 @@ p > .language{
 .form-block {
     display: flex;
     margin-bottom: 100px;
+    
 }
 
 .side {
-    margin-top: 9%;
+    margin-top: 4%;
     margin-right: 130px;
     color: #4f4f4f;
     animation: 0.4s ease-out 0s 1 slideInFromRight;
@@ -759,7 +779,7 @@ p > .language{
 /* FORM STARTS */
 
 .div4 {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 70px;
     margin-right: 250px;
     margin-bottom: 80px;
@@ -842,13 +862,13 @@ textarea {
 .footer {
     background-color: rgb(66, 66, 66);
     text-align: center;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     
     /* position: relative; */
 }
 
 .footer1{
-    margin-top: 50%;
+    /* margin-top: 50%; */
 }
 
 .foot_text{
@@ -1141,6 +1161,7 @@ and (max-device-width : 1024px) {
         width: 80%;
         top: 0%;
         margin-top: 55%;
+        
     }
 
     .user-text{
@@ -1157,17 +1178,18 @@ and (max-device-width : 1024px) {
 
     /* FOR projects.html */
     .footer1{
-        margin-top: 130%;
+        /* margin-top: 130%; */
     }
 
     /* FOR index,html */
     .footer3{
-        margin-top: 47%;
+        /* margin-top: 47%; */
     }
 
     /* FOR contact.html */
     .footer4{
-        margin-top: 40%;
+        /* margin-top: 40%; */
+        /* margin-bottom: 0; */
     }
 
     .div4{
