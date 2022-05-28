@@ -8,21 +8,7 @@ html{
     scroll-behavior: smooth;
 } 
 
-/* CUSTOM SCROLLBAR */
 
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: #074279;
-    border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 50px;
-}
 
 
 
