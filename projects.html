@@ -26,17 +26,17 @@
 
     <style>
         /* @media(min-width:768px) {
-            .footer {
-                margin-top: 700px;
-            }
-        } */
+.footer {
+margin-top: 700px;
+}
+} */
 
 
-        @media(max-width:480px) {
+        /* @media(max-width:480px) {
             .footer {
                 margin-top: 850px;
             }
-        }
+        } */
     </style>
 </head>
 
@@ -68,144 +68,150 @@
 
 
 
-<div class="wrap">
+    <div class="wrap">
 
-    <!-- NAVBAR -->
-    <div class="navbar" id="myTopnav">
+        <!-- NAVBAR -->
+        <div class="navbar" id="myTopnav">
 
 
-        <div class="menu-btn" id="button1">
-            <div class="menu-btn__burger" id="inner_btn" ></div>
+            <div class="menu-btn" id="button1">
+                <div class="menu-btn__burger" id="inner_btn"></div>
+            </div>
+
+            <nav>
+
+
+
+                <div class="link" id="linkl">
+                    <ul>
+                        <li>
+                            <a id="new" href="index.html">ABOUT</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" href="projects.html">PROJECTS</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" href="contact.html">CONTACT</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="link1" id="linkl1">
+                    <ul>
+                        <li>
+                            <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME"><span>ABOUT
+                                    ME</span></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" class="navLink active" href="projects.html"
+                                data-replace="PROJECTS"><span>PROJECTS</span></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME"><span>CONTACT
+                                    ME</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
         </div>
 
-        <nav>
 
+        <!-- SVG BACKGROUND -->
+        <!-- <svg viewBox="0 0 500 200" preserveAspectRatio="xMinYMin meet">
 
-
-            <div class="link" id="linkl" >
-                <ul>
-                    <li>
-                        <a id="new" href="index.html">ABOUT</a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a id="new" href="projects.html">PROJECTS</a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a id="new" href="contact.html">CONTACT</a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-
-            <div class="link1" id="linkl1">
-                <ul>
-                    <li>
-                        <a id="new" class="navLink" href="index.html" data-replace="ABOUT ME"><span>ABOUT ME</span></a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a id="new" class="navLink active" href="projects.html"
-                            data-replace="PROJECTS"><span>PROJECTS</span></a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a id="new" class="navLink" href="contact.html" data-replace="CONTACT ME"><span>CONTACT
-                                ME</span></a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-
-    </div>
-
-
-    <!-- SVG BACKGROUND -->
-    <svg viewBox="0 0 500 200" preserveAspectRatio="xMinYMin meet">
-
-        <path d="M0, 100 C150, 200 350,
+            <path d="M0, 100 C150, 200 350,
 0 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
-        </path>
-    </svg>
+            </path>
+        </svg>
 
-    <svg class="newSVG" viewBox="0 0 150 200" preserveAspectRatio="xMinYMin meet">
+        <svg class="newSVG" viewBox="0 0 150 200" preserveAspectRatio="xMinYMin meet">
 
-        <path d="M0, 100 C150, 200 350,
+            <path d="M0, 100 C150, 200 350,
 0 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:rgb(166, 180, 195); opacity: 0.3;">
-        </path>
-    </svg>
+            </path>
+        </svg> -->
 
 
-    <!-- PROJECTS SLIDER -->
-    <div class="container">
-        <div class="testimonial">
-            <div class="slide-row" id="slide">
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            This is a Website for my Biodata.<br>
-                            <span class="language">Features</span> : Responsive<br>
-                            <span class="language">Languages used</span> : HTML5, CSS3.<br> <br>
-                            <a href="https://kvarunkk.github.io/Biodata/" target="_blank" class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/Biodata" target="_blank" class="proLink">Github</a>
-                        </p>
-                    </div>
-                    <div class="user-img">
-                        <img class="lap" src="laptop-1.png">
-                        <img class="mob" src="mobile-1.png">
-                    </div>
-                </div>
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(206.288, 236.481, 246.766, 1)" offset="0%"></stop><stop stop-color="rgba(186.781, 192.911, 246.766, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,245L40,253.2C80,261,160,278,240,294C320,310,400,327,480,277.7C560,229,640,114,720,106.2C800,98,880,196,960,236.8C1040,278,1120,261,1200,212.3C1280,163,1360,82,1440,73.5C1520,65,1600,131,1680,130.7C1760,131,1840,65,1920,89.8C2000,114,2080,229,2160,302.2C2240,376,2320,408,2400,359.3C2480,310,2560,180,2640,179.7C2720,180,2800,310,2880,334.8C2960,359,3040,278,3120,253.2C3200,229,3280,261,3360,285.8C3440,310,3520,327,3600,285.8C3680,245,3760,147,3840,155.2C3920,163,4000,278,4080,294C4160,310,4240,229,4320,212.3C4400,196,4480,245,4560,220.5C4640,196,4720,98,4800,98C4880,98,4960,196,5040,204.2C5120,212,5200,131,5280,106.2C5360,82,5440,114,5520,122.5C5600,131,5680,114,5720,106.2L5760,98L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z"></path></svg>
 
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            Made this Sample Website suitable for commercial purposes.<br>
-                            <span class="language">Features</span> : Responsive<br>
-                            <span class="language">Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
-                            <a href="https://kvarunkk.github.io/fLUCK/" target="_blank" class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/fLUCK" target="_blank" class="proLink">Github</a>
-                        </p>
-                    </div>
-                    <div class="user-img">
-                        <img class="lap" src="laptop-2.png">
-                        <img class="mob" src="mobile-2.png">
-                    </div>
-                </div>
 
-                <div class="slide-col">
-                    <div class="user-text">
-                        <p>
-                            Built a Template suitable for Portfolios of all kinds.<br>
-                            <span class="language">Features</span> : Responsive<br>
-                            <span class="language">Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
-                            <a href="https://kvarunkk.github.io/Portfolio-Sample/" target="_blank"
-                                class="proLink">Live</a>
-                            <a href="https://github.com/kVarunkk/Portfolio-Sample" target="_blank"
-                                class="proLink">Github</a>
-                        </p>
+        <!-- PROJECTS SLIDER -->
+        <div class="container">
+            <div class="testimonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                This is a Website for my Biodata.<br>
+                                <span class="language">Features</span> : Responsive<br>
+                                <span class="language">Languages used</span> : HTML5, CSS3.<br> <br>
+                                <a href="https://kvarunkk.github.io/Biodata/" target="_blank" class="proLink">Live</a>
+                                <a href="https://github.com/kVarunkk/Biodata" target="_blank" class="proLink">Github</a>
+                            </p>
+                        </div>
+                        <div class="user-img">
+                            <img class="lap" src="laptop-1.png">
+                            <img class="mob" src="mobile-1.png">
+                        </div>
                     </div>
-                    <div class="user-img">
-                        <img class="lap" src="laptop-3.png">
-                        <img class="mob" src="mobile-3.png">
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Made this Sample Website suitable for commercial purposes.<br>
+                                <span class="language">Features</span> : Responsive<br>
+                                <span class="language">Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
+                                <a href="https://kvarunkk.github.io/fLUCK/" target="_blank" class="proLink">Live</a>
+                                <a href="https://github.com/kVarunkk/fLUCK" target="_blank" class="proLink">Github</a>
+                            </p>
+                        </div>
+                        <div class="user-img">
+                            <img class="lap" src="laptop-2.png">
+                            <img class="mob" src="mobile-2.png">
+                        </div>
+                    </div>
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Built a Template suitable for Portfolios of all kinds.<br>
+                                <span class="language">Features</span> : Responsive<br>
+                                <span class="language">Languages used</span> : HTML5, CSS3, JavaScript.<br> <br>
+                                <a href="https://kvarunkk.github.io/Portfolio-Sample/" target="_blank"
+                                    class="proLink">Live</a>
+                                <a href="https://github.com/kVarunkk/Portfolio-Sample" target="_blank"
+                                    class="proLink">Github</a>
+                            </p>
+                        </div>
+                        <div class="user-img">
+                            <img class="lap" src="laptop-3.png">
+                            <img class="mob" src="mobile-3.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
 
     <!-- FOOTER -->
-    <div class="footer footer1" id="foot">
+    <div class="footer " id="foot">
         <a href="mailto:varunkumawatleap2@gmail.com" class="fa fa-google old"></a>
         <a href="https://www.linkedin.com/in/varun-kumawat-0a6b3a228" class="fa fa-linkedin old" target="_blank"></a>
         <a href="https://github.com/kVarunkk" class="fa fa-github old" target="_blank"></a>
     </div>
 
-</div>
+
 
 
 
@@ -218,16 +224,16 @@
     <script>
 
         $(".menu-btn").click(function () {
-            if ($( ".menu-btn" ).hasClass( "open" )) {
+            if ($(".menu-btn").hasClass("open")) {
                 $(".link").css('transform', 'scale(0)');
                 $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
-                $(".container").css('opacity',  '1');
+                $(".container").css('opacity', '1');
             }
-            else{
-            $(".link").css('transform', 'translateX(90%)');
-            $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
-            $(".container").css('opacity',  '0.1');
-            
+            else {
+                $(".link").css('transform', 'translateX(90%)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.7)');
+                $(".container").css('opacity', '0.1');
+
             }
         });
 
@@ -235,7 +241,7 @@
         $(".list").click(function () {
             $(".link").css('transform', 'scale(0)');
             $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
-            $(".container").css('opacity',  '1');
+            $(".container").css('opacity', '1');
             $(".menu-btn").removeClass("open");
             menuOpen = false;
         });
@@ -245,24 +251,24 @@
         // FOR CLOSING SIDE MENU WHEN CLICKED OUTSIDE IT.
 
         $(document).click(function (e) {
-        
-        var side_menu = document.getElementById('linkl');
-        var menu_button = document.getElementById('button1');
-        var inner_button = document.getElementById('inner_btn');
+
+            var side_menu = document.getElementById('linkl');
+            var menu_button = document.getElementById('button1');
+            var inner_button = document.getElementById('inner_btn');
 
 
-        if (e.target != side_menu && e.target != menu_button && e.target != inner_button ) {
-            $(".link").css('transform', 'scale(0)');
-            $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
-            $(".container").css('opacity',  '1');
-            $(".menu-btn").removeClass("open");
-            menuOpen = false;
-        }
-        // var clicker =  e.target;
-        // console.log(clicker);
-    });
-    
-    
+            if (e.target != side_menu && e.target != menu_button && e.target != inner_button) {
+                $(".link").css('transform', 'scale(0)');
+                $(".wrap").css('backgroundColor', 'rgba(115, 112, 112, 0.0)');
+                $(".container").css('opacity', '1');
+                $(".menu-btn").removeClass("open");
+                menuOpen = false;
+            }
+            // var clicker =  e.target;
+            // console.log(clicker);
+        });
+
+
         const menuBtn = document.querySelector('.menu-btn');
         let menuOpen = false;
         menuBtn.addEventListener('click', () => {
